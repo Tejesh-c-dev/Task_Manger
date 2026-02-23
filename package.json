@@ -1,0 +1,19 @@
+{
+  "name": "task-manager-fullstack",
+  "version": "1.0.0",
+  "description": "Full-stack Task Manager with React and Node.js",
+  "private": true,
+  "scripts": {
+    "client": "cd client && npm start",
+    "server": "cd server && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install:all": "npm install && cd client && npm install && cd ../server && npm install",
+    "build": "cd client && npm run build"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "keywords": ["task-manager", "mern", "react", "node", "mongodb"],
+  "author": "",
+  "license": "ISC"
+}
